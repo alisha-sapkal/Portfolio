@@ -4,8 +4,16 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Hero() {
   const socialLinks = [
-    { icon: <FaGithub />, href: "https://github.com/alisha-sapkal", label: "GitHub" },
-    { icon: <FaLinkedin />, href: "https://linkedin.com/in/alisha-sapkal-06b0ba259", label: "LinkedIn" },
+    {
+      icon: <FaGithub />,
+      href: "https://github.com/alisha-sapkal",
+      label: "GitHub",
+    },
+    {
+      icon: <FaLinkedin />,
+      href: "https://linkedin.com/in/alisha-sapkal-06b0ba259",
+      label: "LinkedIn",
+    },
     // { icon: <FaTwitter />, href: "https://twitter.com/yourusername", label: "Twitter" },
   ];
 
@@ -13,7 +21,7 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
-      
+
       {/* Animated shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -95,7 +103,11 @@ export default function Hero() {
             href="#projects"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-950 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow"
+            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-md hover:shadow-xl transition-all duration-300"
+            style={{
+              WebkitBackgroundClip: "initial",
+              WebkitTextFillColor: "white",
+            }}
           >
             View My Work
           </motion.a>
