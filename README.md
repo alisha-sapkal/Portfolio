@@ -105,4 +105,4 @@ For any queries or suggestions, please reach out through the contact form on the
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Alisha Sapkal
